@@ -70,9 +70,10 @@ class Layer():
         self.pesos = ini_pesos(dim_saida, dim_entrada)
         self.bias = ini_bias(1, dim_saida)
         self.f_ativacao = activation
-
-        self._acti_entrada, self._acti_saida = None, None
-        self._dpesos, self._dbias = None, None
+        self._acti_entrada = None
+        self._acti_saida = None
+        self._dpesos = None
+        self._dbias = None
 
 class NeuralNetwork():
 
